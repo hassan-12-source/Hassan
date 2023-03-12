@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.warap{
+  margin: 30px auto;
+  padding: 0 30px;
+}
+.grid{
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.img img{
+  max-width: 100%;
+  display: inherit;
+}
+.content-card{
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h6.parfum{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+}
+h2.nam-parfum{
+  font-family: 'fraunce', serif;
+  font-size: 34px;
+  color: hsl(212, 21%, 14%);
+}
+p.description{
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6em;
+}
+.price{
+  display: flex;
+  align-items: center;
+}
+.new-price {
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 35px;
+  padding-right: 25px;
+}
+.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.add-to-cart{
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+  width: 100%;
+}
+.add-to-cart.hover{
+  background-color: hsl(159, 45%, 28%);
+}
+.add-to-cart img{
+  padding-right: 7px;
+}
+@media only screen and (max-width: 628px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .img img{
+    max-width: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .content-card{
+    display: block;
+  }
+  h6.parfum, h2.nam-parfum, p.description,.price{
+    padding-bottom: 23px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .warap{
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+  .img img{
+    max-height: 290px;
+  }
+  .content-card{
+    padding: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
